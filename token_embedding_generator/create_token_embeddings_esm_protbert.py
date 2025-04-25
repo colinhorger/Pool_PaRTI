@@ -54,6 +54,7 @@ def parse_fasta(fasta_file):
         # Yield the last entry
         if identifier is not None:
             yield (identifier, ''.join(sequence))
+    print(sequence)
 
 def process_fasta_with_esm(fasta_file, output_dir):
     """
