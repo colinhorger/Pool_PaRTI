@@ -23,7 +23,7 @@ def parse_fasta(fasta_file):
 
 def process_fasta_and_extract_data(fasta_file, output_dir):
     # Load the ESM-2 model
-    model, alphabet = esm.pretrained.esm2_t33_650M_UR50D()()
+    model, alphabet = esm.pretrained.esm2_t33_650M_UR50D()
     batch_converter = alphabet.get_batch_converter()
     model.eval()  # Disables dropout for deterministic results
 
